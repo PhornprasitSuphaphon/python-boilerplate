@@ -1,0 +1,1 @@
+python3 bin/lib.play.py $1
