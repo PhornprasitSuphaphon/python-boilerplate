@@ -4,16 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-numpy = "*"
 python-dotenv = "*"
+requests = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.9"
 
-
 [scripts]
-dev = "python3 src/app.py dev"
-prod = "python3 src/app.py prod"
-create = "python3 bin/lib.play.py"
+dev = "python3 src/main.py dev"
+prod = "python3 src/main.py prod"
+service = "python3 bin/service.play.py"

@@ -1,5 +1,6 @@
 .env
 .env.dev
 .env.prod
-gitconfig.sh
 .DS_Store
+gitconfig.sh
+__pycache__
