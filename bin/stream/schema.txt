@@ -1,3 +1,12 @@
-def schema_something () : 
+import schema
+def validate(data) : 
 
-  return True
+  format = schema.Schema({
+    'text': str
+  })
+
+  try:
+    format.validate(data)
+    return True
+  except schema.SchemaError:
+    return False
